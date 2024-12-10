@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-image {
+    width: 70px; 
+    height: 70px;
+    object-fit: contain;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    position: relative;  
+    padding: 20px;  
+    margin-bottom: 20px; 
+    border-radius: 0 0 160px 160px;
+    background-color: #f3ebe2; 
+    clip-path: circle(90px at right);
+    clip-path: circle(90px at left);
+    clip-path: circle(85% at top);
+}
+
+.left-section {
+    padding-top: 40px;
+    max-width: 100%;
+    
+}
+
+.hero-title {
+    font-size: 33px;
+    color: #1a237e;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.watch-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.stats-section {
+    display: flex;
+    gap: 100px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-number {
+    font-size: 36px;
+    color: #ff9f1c;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 16px;
+    display:flexbox;
+}
+
+.right-section {
+    position: relative;
+    height: 520px;
+}
+
+.student-image {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 3;
+    top:20px;
+    width: 390px;
+    height: 500px;
+    object-fit: cover;
+    float: right;
+    z-index: -1;
+    margin-right: 17%;
+    border-radius: 0 0 90px 90px;
+    clip-path: circle(1px at right);
+    clip-path: circle(1px at left);
+    clip-path: circle(900% at top);
+}
+
+.floating-cards {
+    position: absolute;
+    left:25%;
+    top: 185px;
+    bottom: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+    gap :10px;
+    opacity:0.9;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-card {
+    background: white;
+    padding: 17px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+}
+.icon-blue {
+    background: #00b4d8;
+    color: white;
+}
+
+.icon-orange {
+    background: #ff9f1c;
+    color: white;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.card-subtitle {
+    color: #666;
+    font-size: 14px;
+}
+ 
+.join-button, .watch-button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+
+.join-button:hover, .watch-button:hover {
+    background-color: orange; 
+}
+
+.image-container img{
+    width: 90%;
+    height: auto;
+    border-radius: 90%;
+    margin-right: 55px;
+    position: relative;   
+}
+.image-last{
+    width: 10%;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 15px;
+    margin-top: -100px;
+    position: relative; 
+}
+.join-now-btn {
+    padding: 8px 16px;
+    background: #ff9f1c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+ a:link {
+    color: rgb(225, 239, 225);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color: rgb(140, 202, 151);
+    background-color: transparent;
+    text-decoration: underline;
+    transition: background-color 0.3s, color 0.3s;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.auth-button {
+    background-color: transparent; 
+    border: 2px solid orange; 
+    cursor: pointer; 
+    color: #333; 
+    font-weight: bold;  
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s; 
+}
+.auth-button:hover {
+    background-color: orange; 
+    color: white; 
+}
+.image-content {
+    margin-left: 20px; 
+    border-radius: 10px;
+}
+
+.girl-image {
+    width: 500px;
+    height : auto;
+}
+
+.action-box {
+    margin: 10px 2px; 
+}
+
+.join-button, .watch-button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+
+.join-button:hover, .watch-button:hover {
+    background-color: orange; 
+}
+
+.play-symbol {
+    font-size: 16px; 
+    margin-right: 5px; 
+}
+.action-buttons {
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.stats {
+    display: flex; 
+    justify-content: flex-start; 
+    margin-top: 20px;
+    gap: 50px;
+    margin-right: 5px;
+}
+
+.stats div {
+    text-align: left; 
+}
+
+.stat-number.orange {
+    color: orange;
+}
+
+.stat-number.blue {
+    color: blue;
+}
+
+.stat-number.red {
+    color: red;
+}
+
+.icon {
+    font-size: 1.8rem; 
+    color: #4CAF50; 
+}
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+.profile-pic {
+    width: 60px;
+    height: 90px;
+    border-radius: 75%;
+    margin-right: 19px;
+    position: relative; 
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    clip-path: circle(90%);
+    border-radius: 90%;
+}
+footer {
+    width: auto; 
+}
+
+/* Responsive adjustments */  
+@media (max-width: 768px) {  
+    .intro {  
+        padding: 10% 0; /* Increased top and bottom padding for small screens */  
+    }  
+
+    .stats div {  
+        flex: 1 1 45%; /* Adjust size for better fit on small screens */  
+    }  
+
+    .trusted-companies h3 {  
+        font-size: 1.2em; /* Larger font size for headings */  
+    }  
+
+    .vision-mission h2 {  
+        font-size: 1.2em; /* Larger font size for headings */  
+    }  
+}
